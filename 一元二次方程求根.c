@@ -5,7 +5,7 @@ int main()
 {
 	double a,b,c,x1,x2,m,p,q;
 
-	printf("ÇëÊäÈëa,b,c:\n");
+	printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«a,b,c:\n");
 
 	scanf("%lf,%lf,%lf",&a,&b,&c);
 
@@ -13,7 +13,7 @@ int main()
 	q=sqrt(b*b-4*a*c)/(2*a);
 
 	if(a==0)
-	{	x1=-b/a;
+	{	x1=-b/c;
 		printf("x1=x2=%7.2lf\n",x1);
 	}
 	else
