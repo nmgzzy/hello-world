@@ -1,25 +1,11 @@
 #include <stdio.h>
 
-int sushu(a){
-	int j,b,p=1;
-	for ( j = 2; j < a; ++j )
-	{
-	b=a%j;
-		if ( b==0 )
-		{
-			p=0;
-			break;
-		}
-
-	}
-
-	return p;
-}
+int isPrime(int a);
 
 int main(int argc, char const *argv[])
 {
 	int o,i,k;
-	printf("ÇëÊäÈë´óÅ¼Êý£º");
+	printf("è¯·è¾“å…¥å¤§å¶æ•°ï¼š");
 	scanf("%d",&o);
 	if (o==4)
 	{
@@ -27,18 +13,29 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		for ( i = 3; i < o; i=i+2)
+		for ( i = 3; i <= o/2; i=i+2)
 		{
 			k=o-i;
-			if(sushu (i)==1)
+			if(isPrime (i)==1&&isPrime(k)==1)
 			{
-				if (sushu(k)==1)
-				{
-					printf("%d=%d+%d",o,i,k );
-					break;
-				}
+				printf("%d=%d+%d\n",o,i,k );
 			}
 		}
 	}
 	return 0;
+}
+
+int isPrime(int a)
+{
+	int j,b,p=1;
+	for ( j = 2; j < a; ++j )
+	{
+		b=a%j;
+		if ( b==0 )
+		{
+			p=0;
+			break;
+		}
+	}
+	return p;
 }
