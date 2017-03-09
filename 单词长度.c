@@ -9,14 +9,14 @@ int main()
 		for(n=0;str[i]!=' ';i++)
 		{
 			if(str[i]=='.')
-			break;
+				break;
 			n++;
 		}
 		if(n!=0)
 		{
 			printf("%d",n);
 			if(str[i+1]!='\0')
-			printf(" ");
+				printf(" ");
 		}
 	}
 	printf("\n");
