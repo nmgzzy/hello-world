@@ -23,8 +23,8 @@ int max(m,n)
 int main()
 {
 	int a,b,c,m,x,y,z;
-	printf("请输入三个不相等的数：a,b,c\n");
-	scanf("%d,%d,%d",&a,&b,&c);
+	printf("请输入三个不相等的数：a b c\n");
+	scanf("%d%d%d",&a,&b,&c);
 	x=min(min(a,b),c);
 	z=max(max(a,b),c);
 	y=a+b+c-x-z;
