@@ -3,12 +3,15 @@
 int main()
 {
     int a,b,c;
-	printf("ÇëÊäÈëa,b:\n");
-	scanf("%d,%d",&a,&b);
+	printf("è¯·è¾“å…¥a,b:\n");
+	scanf("%d %d",&a,&b);
 	printf("a=%d,b=%d\n",a,b);
-	c=a;
-	a=b;
-	b=c;
+	swap(&a,&b);
 	printf("a=%d,b=%d\n",a,b);
-    return 0;
+	return 0;
+}
+void swap(int *a,int *b)
+{
+	int t;
+	t=*a;*a=*b;*b=t;
 }
