@@ -8,13 +8,12 @@ int PrimeNum(int num)
 	{
 		if (num%k==0)
 		{
-		p=0;
-		break;
+			p=0;
+			break;
 		}
 	}		
 	return p;
 }
-
 
 int main(){
 	int num,m;
@@ -27,12 +26,12 @@ int main(){
 		{
 			if (num%m==0)
 			{
-			printf("%d",m );
-			if (PrimeNum(num)==0)
-			{
-				printf("x");
-			}
-			num=num/m;
+				printf("%d",m );
+				if (PrimeNum(num)==0)
+				{
+					printf("x");
+				}
+				num=num/m;
 			}else
 			{
 				m++;
