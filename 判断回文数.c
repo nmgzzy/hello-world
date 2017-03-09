@@ -12,10 +12,10 @@ int main()
 			a=a/10;
 		}
 		if(num==b)
-		printf("yes");
+			printf("yes");
 		else
-		printf("no");
+			printf("no");
 	}else
-	printf("error");
+		printf("error");
 	return 0;
 }
