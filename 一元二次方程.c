@@ -17,6 +17,5 @@ int main()
 	}else{
 		printf("没有实数根\n");
 	}
-
-return 0;
+	return 0;
 }
