@@ -17,3 +17,10 @@ int isPrime(int x)
 	}
 	return ret;
 }
+
+int main()
+{
+	int x=11;
+	printf("%d",isprime(x));
+	return 0;
+}
