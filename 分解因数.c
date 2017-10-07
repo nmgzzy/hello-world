@@ -9,14 +9,15 @@ int isPrime(int num)
 	{
 		if (num%k==0)
 		{
-		p=0;
-		break;
+			p=0;
+			break;
 		}
 	}		
 	return p;
 }
 
-int main(){
+int main()
+{
 	int num,m,n;
 	printf("please write a num between 2 and 100000\n" );
 	scanf("%d",&num);
@@ -30,7 +31,9 @@ int main(){
 				printf("%d=%d*%d\n",num,m,n);
 			}
 		}
-	} else printf("error\n");
+	} 
+	else 
+		printf("error\n");
 	return 0;
 }
 
